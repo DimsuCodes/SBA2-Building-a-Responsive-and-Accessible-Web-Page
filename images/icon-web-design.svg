@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <circle cx="40" cy="40" r="40" fill="#0F5F59"/>
+  <!-- Browser window -->
+  <rect x="18" y="22" width="44" height="36" rx="4" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <line x1="18" y1="31" x2="62" y2="31" stroke="#FFFFFF" stroke-width="3"/>
+  <circle cx="24" cy="26.5" r="1.6" fill="#FFFFFF"/>
+  <circle cx="29" cy="26.5" r="1.6" fill="#FFFFFF"/>
+  <circle cx="34" cy="26.5" r="1.6" fill="#FFFFFF"/>
+  <!-- Layout blocks -->
+  <rect x="23" y="36" width="14" height="17" rx="2" fill="#FFFFFF"/>
+  <rect x="41" y="36" width="16" height="4" rx="2" fill="#FFFFFF"/>
+  <rect x="41" y="43" width="16" height="4" rx="2" fill="#FFFFFF"/>
+  <rect x="41" y="50" width="10" height="3" rx="1.5" fill="#FFFFFF"/>
+</svg>

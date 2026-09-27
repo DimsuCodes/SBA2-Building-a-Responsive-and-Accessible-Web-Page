@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <circle cx="40" cy="40" r="40" fill="#0F5F59"/>
+  <!-- Speech bubble -->
+  <path d="M20 24 H60 A4 4 0 0 1 64 28 V48 A4 4 0 0 1 60 52 H36 L26 60 V52 H20 A4 4 0 0 1 16 48 V28 A4 4 0 0 1 20 24 Z"
+        fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Text lines -->
+  <line x1="24" y1="33" x2="56" y2="33" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <line x1="24" y1="39" x2="50" y2="39" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <line x1="24" y1="45" x2="42" y2="45" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,224 @@
+/* defining the colors once to reuse them later*/
+:root {
+    --color-primary: #0F5F59;
+    --color-dark: #1B2A4A;
+    --color-light: #F4F7F7;
+    --color-white: #FFFFFF;
+    --color-error: #B3261E;
+    --color-focus: #F5A623;
+}
+
+/* ===== Reset ===== */
+
+/* Make width/height include padding and border */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove the browser's default gap around the page */
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+}
+
+
+/*header: logo and nav that will be stacked on mobile version*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-light);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+
+
+
+
+
+
+.hero {
+     background-image: url(images/hero-bg.svg);
+     background-size: cover;
+     background-position: center;
+     color: var(--color-white);
+     text-align:center;
+     padding: 4rem 1rem;
+}
+
+.hero p {
+    max-width: 60ch;
+    margin: 1rem auto 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: var(--color-light);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+
+/* Visible outline when navigating with the keyboard */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
+}
+
+section {
+    padding: 3rem 1rem;
+   
+}
+
+ .services {
+        background-color: var(--color-light);
+    }
+
+ .service-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .service-card {
+        background-color: var(--color-white);
+        padding: 1.5rem;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08)
+    }
+
+
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        display:flex;
+        flex-direction:column;
+        gap: 0.25rem;
+        margin-bottom: 1rem;
+    }
+
+    label {
+        font-weight: 600;
+    }
+
+    input, textarea {
+        font: inherit;
+        padding: 0.75rem;
+        border: 2px solid var(--color-dark);
+        border-radius: 6px;
+    }
+
+    .error-message {
+        color: var(--color-error);
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    button {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        font: inherit;
+        font-weight: 700;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: var(--color-dark);
+    }
+
+/*widescreen*/
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    h1{
+        font-size: 2.75rem;
+    }
+
+    .service-grid{
+       grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+address {
+    font-style: normal;
+}
+
+footer {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    text-align:center;
+    padding: 2rem 1rem;
+}
+
+address {
+    font-style: normal;
+}
+
+footer a {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+@media (min-width: 1024px) {
+    .service-grid {
+       grid-template-columns: repeat(4, 1fr);
+    }
+}
